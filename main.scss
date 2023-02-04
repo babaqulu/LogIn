@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.box {
+    position: absolute;
+    border-radius: 10px;
+    top: 100px;
+    left: 100px;
+    width: 518px;
+    height: 726px;
+    background-color: rgba(#ffffff,0.6);
+
+    .wrapper{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0px 79px;
+        
+
+        .heading{
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            top: 60px;
+            width: 200px;
+            height: 60px;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 60px;
+            font-family: 'Reem Kufi';
+            color: #000000;
+        }
+
+        .email{
+            position: absolute;
+            top: 180px;
+            width: 360px;
+            height: 61px;
+            border: none;
+            border-radius: 10px;
+            background: rgba(245, 245, 245, 0.8);
+        }
+
+        .password{
+            position: absolute;
+            top: 275px;
+            background: rgba(245, 245, 245, 0.8);
+            border: none;
+            border-radius: 10px;
+            width: 360px;
+            height: 61px;
+        }
+
+        .button{
+            width: 360px;
+            height: 61px;
+            position: absolute;
+            top: 388px;
+            border: none;
+            background: #3578DE;
+            border-radius: 10px;
+        }
+
+        .checkbox{
+            position: absolute;
+            width: 200px;
+            height: 30px;
+            left: 0px;
+            top: 347px;
+            font-family: 'Reem Kufi';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 30px;
+        }
+
+        .link{
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            width: 200px;
+            height: 30px;
+            top: 452px;
+            text-decoration: none;
+            font-family: 'Reem Kufi';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 30px;
+            color: rgba(#000000,0.5);
+        }
+        
+        .rectangle{
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            width: 56px;
+            height: 50px;
+            top: 490px;
+            border: 3px solid rgba(220, 217, 217, 0.5);
+            border-radius: 10px;
+        }
+
+        .line1{
+            position: absolute;
+            left: 9px;
+            top: 514px;
+            width: 143px;
+            height: 0px;
+            border-radius: 3px;
+            border:3px solid  rgba(220, 217, 217, 0.5);
+        }
+
+        .line2{
+            position: absolute;
+            right: 9px;
+            top: 514px;
+            width: 143px;
+            height: 0px;
+            border-radius: 3px;
+            border:3px solid  rgba(220, 217, 217, 0.5);
+        }
+
+        .or{
+            position: absolute;
+            width: 23px;
+            height: 23px;
+            left: 168px;
+            top: 503px;
+            font-family: 'Reem Kufi';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 22px;
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        .rectangle2{
+            position: absolute;
+            width: 69px;
+            height: 61px;
+            left: 103px;
+            top: 591px;
+            border: 3px solid rgba(220, 217, 217, 0.5);
+            border-radius: 10px;
+        }
+
+        .i{
+            position: absolute;
+            top:618px;
+            left: 124px;
+        }
+        .dot{
+            
+            position: absolute;
+            top:605px;
+            left: 124px;
+        }
+        .n{
+            position: absolute;
+            top:617px;
+            left: 135px;
+            border: 2px solid rgba(220, 217, 217, 0.8);
+        }
+
+        .fb{
+            
+            position: absolute;
+            top:610px;
+            left: 212px;
+            border: 2px solid rgba(220, 217, 217, 0.8);
+        }
+
+        .rectangle3{
+            position: absolute;
+            width: 69px;
+            height: 61px;
+            left: 187px;
+            top: 591px;
+            border: 3px solid rgba(220, 217, 217, 0.5);
+            border-radius: 10px;
+        }
+        
+    
+    
+        
+    }
+
+    
+    
+    
+}
+
+.bgimage{
+    z-index: -1;
+    border-radius: 10px;
+    position: relative;
+    top: 100px;
+    left: 100px;
+    width: 518px;
+    height: 726px;
+    background: url(/img/bg.jpg),#0F0F0F;
+    box-shadow: 0px 319px 128px rgba(0, 0, 0, 0.01), 0px 180px 108px rgba(0, 0, 0, 0.05), 0px 80px 80px rgba(0, 0, 0, 0.09), 0px 20px 44px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+    background-size: cover;
+}
+.password::placeholder{
+    color: red;
+    padding: 0 10px;
+    font-family: 'Reem Kufi';
+}
