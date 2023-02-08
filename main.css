@@ -4,28 +4,51 @@
   box-sizing: border-box;
 }
 
+body {
+  width: 100%;
+  height: 100vh;
+  background: url(/img/bg4.jpg);
+  background-size: cover;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
 .box {
   position: absolute;
   border-radius: 10px;
-  top: 100px;
-  left: 100px;
+  top: 50px;
+  left: 50px;
   width: 518px;
   height: 726px;
   background-color: rgba(255, 255, 255, 0.6);
 }
-.box .wrapper {
-  position: relative;
+
+.wrapper {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  width: 518px;
+  height: 726px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  margin: 0px 79px;
 }
-.box .wrapper .heading {
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  top: 60px;
+.wrapper ::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.5);
+  padding: 0 10px;
+  font-family: "Reem Kufi";
+}
+.wrapper ::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+  padding: 0 10px;
+  font-family: "Reem Kufi";
+}
+.wrapper .heading {
   width: 200px;
   height: 60px;
   font-weight: 700;
@@ -33,95 +56,61 @@
   line-height: 60px;
   font-family: "Reem Kufi";
   color: #000000;
+  text-align: center;
 }
-.box .wrapper .email {
-  position: absolute;
-  top: 180px;
+.wrapper .email {
   width: 360px;
   height: 61px;
   border: none;
   border-radius: 10px;
   background: rgba(245, 245, 245, 0.8);
 }
-.box .wrapper .password {
-  position: absolute;
-  top: 275px;
+.wrapper .password {
   background: rgba(245, 245, 245, 0.8);
   border: none;
   border-radius: 10px;
   width: 360px;
   height: 61px;
 }
-.box .wrapper .button {
+.wrapper .button {
   width: 360px;
   height: 61px;
-  position: absolute;
-  top: 388px;
   border: none;
   background: #3578DE;
   border-radius: 10px;
+  color: #ffffff;
+  font-family: "Reem Kufi";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+  letter-spacing: 2px;
+  text-align: center;
 }
-.box .wrapper .checkbox {
-  position: absolute;
+.wrapper .checkbox {
   width: 200px;
   height: 30px;
-  left: 0px;
-  top: 347px;
   font-family: "Reem Kufi";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
+  position: relative;
+  right: 15%;
 }
-.box .wrapper .link {
+.wrapper .orcont {
   display: flex;
-  justify-content: center;
-  position: absolute;
-  width: 200px;
-  height: 30px;
-  top: 452px;
-  text-decoration: none;
-  font-family: "Reem Kufi";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 30px;
-  color: rgba(0, 0, 0, 0.5);
+  flex-direction: row;
+  align-items: center;
 }
-.box .wrapper .rectangle {
+.wrapper .orcont p {
   display: flex;
+  align-items: center;
   justify-content: center;
-  position: absolute;
   width: 56px;
   height: 50px;
-  top: 490px;
   border: 3px solid rgba(220, 217, 217, 0.5);
   border-radius: 10px;
-}
-.box .wrapper .line1 {
-  position: absolute;
-  left: 9px;
-  top: 514px;
-  width: 143px;
-  height: 0px;
-  border-radius: 3px;
-  border: 3px solid rgba(220, 217, 217, 0.5);
-}
-.box .wrapper .line2 {
-  position: absolute;
-  right: 9px;
-  top: 514px;
-  width: 143px;
-  height: 0px;
-  border-radius: 3px;
-  border: 3px solid rgba(220, 217, 217, 0.5);
-}
-.box .wrapper .or {
-  position: absolute;
-  width: 23px;
-  height: 23px;
-  left: 168px;
-  top: 503px;
   font-family: "Reem Kufi";
   font-style: normal;
   font-weight: 400;
@@ -129,53 +118,68 @@
   line-height: 22px;
   color: rgba(255, 255, 255, 0.5);
 }
-.box .wrapper .rectangle2 {
-  position: absolute;
+.wrapper .orcont .line1 {
+  width: 143px;
+  height: 0px;
+  border-radius: 3px;
+  border: 3px solid rgba(220, 217, 217, 0.5);
+}
+.wrapper .orcont .line2 {
+  width: 143px;
+  height: 0px;
+  border-radius: 3px;
+  border: 3px solid rgba(220, 217, 217, 0.5);
+}
+.wrapper .link {
+  width: 200px;
+  height: 30px;
+  text-decoration: none;
+  font-family: "Reem Kufi";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+.wrapper .iconcont {
+  width: 153px;
+  height: 61px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.wrapper .iconcont .linkedin {
   width: 69px;
   height: 61px;
-  left: 103px;
-  top: 591px;
   border: 3px solid rgba(220, 217, 217, 0.5);
   border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.box .wrapper .i {
-  position: absolute;
-  top: 618px;
-  left: 124px;
+.wrapper .iconcont .linkedin .linkic {
+  fill: rgb(220, 217, 217);
 }
-.box .wrapper .dot {
-  position: absolute;
-  top: 605px;
-  left: 124px;
-}
-.box .wrapper .n {
-  position: absolute;
-  top: 617px;
-  left: 135px;
-  border: 2px solid rgba(220, 217, 217, 0.8);
-}
-.box .wrapper .fb {
-  position: absolute;
-  top: 610px;
-  left: 212px;
-  border: 2px solid rgba(220, 217, 217, 0.8);
-}
-.box .wrapper .rectangle3 {
-  position: absolute;
+.wrapper .iconcont .fb {
   width: 69px;
   height: 61px;
-  left: 187px;
-  top: 591px;
   border: 3px solid rgba(220, 217, 217, 0.5);
   border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper .iconcont .fb .fbic {
+  fill: rgb(220, 217, 217);
 }
 
 .bgimage {
   z-index: -1;
   border-radius: 10px;
   position: relative;
-  top: 100px;
-  left: 100px;
+  top: 50px;
+  left: 50px;
   width: 518px;
   height: 726px;
   background: url(/img/bg.jpg), #0F0F0F;
@@ -183,20 +187,43 @@
   background-size: cover;
 }
 
-.password::-moz-placeholder {
-  color: red;
-  padding: 0 10px;
-  font-family: "Reem Kufi";
+.login2 {
+  padding: 0 px;
+  position: absolute;
+  left: 35%;
+}
+.login2 .box {
+  background-color: rgba(119, 119, 119, 0.6);
+}
+.login2 .bgimage {
+  z-index: -1;
+  border-radius: 10px;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  width: 518px;
+  height: 726px;
+  background: url(/img/bg2.jpg), #0F0F0F;
+  box-shadow: 0px 319px 128px rgba(0, 0, 0, 0.01), 0px 180px 108px rgba(0, 0, 0, 0.05), 0px 80px 80px rgba(0, 0, 0, 0.09), 0px 20px 44px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+  background-size: cover;
 }
 
-.password:-ms-input-placeholder {
-  color: red;
-  padding: 0 10px;
-  font-family: "Reem Kufi";
+.login3 {
+  position: absolute;
+  right: 5%;
 }
-
-.password::placeholder {
-  color: red;
-  padding: 0 10px;
-  font-family: "Reem Kufi";
+.login3 .box {
+  background-color: rgba(212, 211, 211, 0.6);
+}
+.login3 .bgimage {
+  z-index: -1;
+  border-radius: 10px;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  width: 518px;
+  height: 726px;
+  background: url(/img/bg3.jpg), #0F0F0F;
+  box-shadow: 0px 319px 128px rgba(0, 0, 0, 0.01), 0px 180px 108px rgba(0, 0, 0, 0.05), 0px 80px 80px rgba(0, 0, 0, 0.09), 0px 20px 44px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+  background-size: cover;
 }/*# sourceMappingURL=main.css.map */
